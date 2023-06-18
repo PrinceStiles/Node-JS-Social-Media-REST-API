@@ -9,7 +9,7 @@ const authRoute = require("./routes/auth");
 
 dotenv.config();
 
-mongoose.connect(process.env.MONGO_URL);
+mongoose.connect(process.env.MONGO_URI);
 
 // middlewares
 app.use(express.json());
